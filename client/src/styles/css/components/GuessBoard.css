@@ -1,0 +1,44 @@
+.GuessBoard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+.GuessBoard .GuessBoard__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+.GuessBoard .GuessBoard__row .GuessBoard__letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: solid 2px rgb(96, 96, 96);
+  color: rgb(96, 96, 96);
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+.GuessBoard .GuessBoard__row .GuessBoard__letter.score {
+  color: #fff;
+}
+.GuessBoard .GuessBoard__row .GuessBoard__letter.score-0 {
+  background-color: rgb(96, 96, 96);
+  border-color: rgb(96, 96, 96);
+}
+.GuessBoard .GuessBoard__row .GuessBoard__letter.score-1 {
+  background-color: rgb(237, 194, 65);
+  border-color: rgb(237, 194, 65);
+}
+.GuessBoard .GuessBoard__row .GuessBoard__letter.score-2 {
+  background-color: rgb(50, 179, 51);
+  border-color: rgb(50, 179, 51);
+}
+
+/*# sourceMappingURL=GuessBoard.css.map */

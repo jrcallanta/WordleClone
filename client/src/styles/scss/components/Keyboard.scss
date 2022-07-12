@@ -1,0 +1,32 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.Keyboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: $gapSize;
+
+  .Keyboard__row {
+    display: flex;
+    justify-content: center;
+    gap: $gapSize;
+
+    .Keyboard__row__button {
+      @include buttonReset;
+      min-width: $keyBoardLetterWidth;
+      height: $keyBoardLetterHeight;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.used {
+        background-color: $color-button-disabled;
+      }
+    }
+
+
+  }
+}

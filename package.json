@@ -1,0 +1,12 @@
+{
+  "name": "wordleclone",
+  "version": "1.0.0",
+  "description": "This is a wordle clone webapp for practice.",
+  "main": "./server/app.js",
+  "scripts": {
+    "start": "cd ./server && npm start",
+    "build": "cd ./server && (npm install && npm run build)"
+  },
+  "author": "Jelito S Callanta II",
+  "license": "ISC"
+}

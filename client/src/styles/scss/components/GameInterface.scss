@@ -1,0 +1,26 @@
+@import '../_variables.scss';
+
+.GameInterface {
+  display: flex;
+  flex-direction: column;
+
+  .GameInterface__gameOverLabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $color-0;
+
+  }
+
+  .GameInterface__guessBoard {
+    margin-top: 1rem;
+  }
+
+  .GameInterface__keyboard {
+    margin-top: 3rem;
+  }
+}
