@@ -3,6 +3,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 }
 .App__title {
@@ -15,6 +16,20 @@
   margin-top: auto;
   padding-top: 2rem;
   font-size: 0.75rem;
+  text-align: center;
+}
+
+@media (max-width: 37.5em) {
+  .App__title {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .App .api-credits {
+    margin-top: 0;
+    font-size: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

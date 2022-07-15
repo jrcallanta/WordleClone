@@ -41,4 +41,11 @@
   border-color: rgb(50, 179, 51);
 }
 
+@media (max-width: 20em) {
+  .GuessBoard .GuessBoard__row .GuessBoard__letter {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}
+
 /*# sourceMappingURL=GuessBoard.css.map */

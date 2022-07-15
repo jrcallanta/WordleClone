@@ -39,4 +39,27 @@
   background-color: rgb(154, 154, 154);
 }
 
+.Keyboard {
+  gap: 0.3125rem;
+}
+.Keyboard .Keyboard__row {
+  gap: 0.3125rem;
+}
+@media (max-width: 37.5em) {
+  .Keyboard .Keyboard__row .Keyboard__row__button {
+    font-size: 0.65rem;
+    padding: 0.5rem;
+    min-width: 1.625rem;
+    height: 2.275rem;
+  }
+}
+@media (max-width: 20em) {
+  .Keyboard .Keyboard__row .Keyboard__row__button {
+    font-size: 0.6rem;
+    padding: 0.35rem;
+    min-width: 1.25rem;
+    height: 1.75rem;
+  }
+}
+
 /*# sourceMappingURL=Keyboard.css.map */

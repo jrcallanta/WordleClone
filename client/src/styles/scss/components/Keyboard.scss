@@ -1,3 +1,4 @@
+@import '../_respond';
 @import '../_variables.scss';
 @import '../_mixins.scss';
 
@@ -26,7 +27,31 @@
         background-color: $color-button-disabled;
       }
     }
+  }
+}
 
 
+
+.Keyboard {
+  gap: calc($gapSize * 1.25);
+
+  .Keyboard__row {
+    gap: calc($gapSize * 1.25);
+
+    .Keyboard__row__button {
+      @include respond(phone) {
+        font-size: .65rem;
+        padding: .5rem;
+        min-width: calc($keyBoardLetterWidth * .65);
+        height: calc($keyBoardLetterHeight * .65);
+      }
+
+      @include respond(phone-small) {
+        font-size: .60rem;
+        padding: .35rem;
+        min-width: calc($keyBoardLetterWidth * .5);
+        height: calc($keyBoardLetterHeight * .5);
+      }
+    }
   }
 }

@@ -1,3 +1,4 @@
+@import './_respond.scss';
 @import './_variables.scss';
 
 .App {
@@ -5,6 +6,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 
   &__title {
@@ -18,5 +20,23 @@
     margin-top: auto;
     padding-top: 2rem;
     font-size: .75rem;
+    text-align: center;
+  }
+}
+
+
+.App {
+  &__title {
+    @include respond(phone) {
+      margin-bottom: .5rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  .api-credits {
+    @include respond(phone) {
+      margin-top: 0;
+      font-size: .5rem;
+    }
   }
 }

@@ -1,3 +1,4 @@
+@import '../_respond.scss';
 @import '../_variables.scss';
 
 .GameInterface {
@@ -13,7 +14,6 @@
     font-size: 1rem;
     font-weight: 700;
     color: $color-0;
-
   }
 
   .GameInterface__guessBoard {
@@ -22,5 +22,22 @@
 
   .GameInterface__keyboard {
     margin-top: 3rem;
+  }
+}
+
+
+
+.GameInterface {
+  @include respond(phone) {
+    flex: 1;
+
+    .GameInterface__gameOverLabel {
+      font-size: .75rem;
+    }
+
+    .GameInterface__keyboard {
+      margin-top: auto;
+      padding-top: 2rem;
+    }
   }
 }

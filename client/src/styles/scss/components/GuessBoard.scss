@@ -1,3 +1,4 @@
+@import '../_respond.scss';
 @import '../_variables.scss';
 
 .GuessBoard {
@@ -46,6 +47,18 @@
       background-color: $color-2;
       border-color: $color-2;
     }
+  }
+}
 
+
+
+.GuessBoard {
+  .GuessBoard__row {
+    .GuessBoard__letter {
+      @include respond(phone-small) {
+        width: calc($guessBoardLetterWidth * .8);
+        height: calc($guessBoardLetterHeight * .8);
+      }
+    }
   }
 }
